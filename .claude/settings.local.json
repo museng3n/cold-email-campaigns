@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm add:*)",
+      "Bash(npm run build:*)",
+      "Bash(dir:*)",
+      "Bash(test:*)",
+      "Bash(python3:*)",
+      "Bash(for f in \"C:/Users/musta/Downloads/new_frontend/automation-builder-page/lib/api.ts\" \"C:/Users/musta/Downloads/new_frontend/automation-builder-page/lib/api.tsx\" \"C:/Users/musta/Downloads/new_frontend/automation-builder-page/lib/config.ts\" \"C:/Users/musta/Downloads/new_frontend/automation-builder-page/shared-api-config/config.ts\")",
+      "Bash(do test -f \"$f\")",
+      "Bash(echo:*)",
+      "Bash(done)",
+      "Bash(shopt:*)",
+      "Bash(ls:*)"
+    ]
+  }
+}
