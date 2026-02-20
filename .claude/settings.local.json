@@ -11,7 +11,10 @@
       "Bash(echo:*)",
       "Bash(done)",
       "Bash(shopt:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ]
   }
 }
