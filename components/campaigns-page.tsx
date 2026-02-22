@@ -85,7 +85,15 @@ export default function CampaignsPage() {
             <p className="text-sm text-[#6B7280] mt-2">Multi-step sequences with smart personalization</p>
             <p className="text-sm text-[#6B7280]">حملات متعددة الخطوات مع تخصيص ذكي</p>
           </div>
-          <button className="inline-flex items-center gap-2 px-6 py-3 bg-[#7C3AED] text-white rounded-lg font-semibold shadow-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-400 hover:to-orange-300 hover:shadow-lg hover:scale-105">
+          <button
+            onClick={() => {
+              window.parent.postMessage(
+                { type: 'NAVIGATE', page: 'campaign-builder' },
+                'https://triggerio-shell.vercel.app'
+              )
+            }}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#7C3AED] text-white rounded-lg font-semibold shadow-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-400 hover:to-orange-300 hover:shadow-lg hover:scale-105"
+          >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
             </svg>
